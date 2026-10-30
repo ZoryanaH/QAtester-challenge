@@ -46,6 +46,8 @@ What testing remains incomplete.
 I believe QA should provide an objective assessment of product quality rather than approve a release simply because of a deadline.
 I would communicate the risks to the QA Lead and relevant stakeholders, allowing the final release decision to be based on evidence and business impact.
 
+
+
 B. How You Approach an Unfamiliar Product
 2. You Join TaloTrace
 
@@ -122,6 +124,8 @@ Defects have been documented and communicated.
 Remaining risks are clearly understood.
 
 I would not measure testing quality only by the number of executed test cases. Risk coverage and the quality of evidence are more important.
+
+
 
 C. Test Design & Risk-Based Thinking
 3. Build a Test Strategy for a Feature
@@ -272,6 +276,8 @@ Performance benchmarking unless performance is part of the release requirements.
 
 I would prioritize business-critical functionality, security, data integrity, and evidence reliability.
 
+
+
 D. Bug Investigation & Defect Reporting
 4. From Unexpected Behaviour to High-Quality Defect
 
@@ -392,6 +398,8 @@ Further investigation is required to determine whether findings are missing duri
 Impact:
 Users may receive incomplete testing results and overlook important defects.
 
+
+
 E. Exploratory Testing
 5. Explore Beyond the Test Case
 
@@ -423,6 +431,8 @@ Long-running jobs.
 Duplicate findings.
 
 I would document any unexpected behaviour with clear reproduction steps and supporting evidence.
+
+
 
 F. Regression & Release Validation
 6. Release Candidate
@@ -516,6 +526,8 @@ Screenshots, videos, logs, and API evidence.
 Outstanding risks and recommendations.
 
 My objective would be to provide a clear release assessment rather than simply report a percentage of passing tests.
+
+
 
 G. Difficult Bug Triage
 7. Which Bug Matters Most?
@@ -614,6 +626,8 @@ Release-blocking: No, unless it prevents users from completing an important acti
 
 Next action: Document the issue and schedule it for a future UI improvement.
 
+
+
 H. TaloTrace-Specific QA Judgement
 8. When the AI Finds the Wrong Thing
 
@@ -670,6 +684,8 @@ Because this is a critical payment calculation finding, I would escalate it imme
 I would not recommend ignoring it simply because manual reproduction failed once.
 The release decision should depend on the potential financial impact, evidence quality, reproducibility, and results of further investigation.
 
+
+
 I. Working with the SDET
 9. Automation vs Manual Testing
 Scenario 1: Automation takes three days, manual testing takes 30 minutes.
@@ -722,6 +738,8 @@ I would collaborate with the SDET to identify whether the instability comes from
 If automation cannot be stabilized immediately, I would temporarily maintain manual regression coverage.
 The objective is to preserve coverage of business-critical functionality, even if the automated implementation needs improvement.
 
+
+
 J. Working with Engineering & Product
 10. The Engineer Disagrees With Your Bug
 
@@ -768,6 +786,8 @@ A usability issue.
 
 If the requirement is genuinely ambiguous, I would ask Product to clarify the expected behaviour and update the acceptance criteria.
 I believe QA, Engineering, and Product should work together toward a shared understanding of quality.
+
+
 
 K. QA Data & Quality Signals
 11. What Would You Track?
@@ -877,6 +897,8 @@ Prioritize issues based on customer impact.
 Potential limitation:
 Some issues may be underreported or difficult to quantify.
 
+
+
 L. Building a Better Release Process
 12. Imagine the Current Process Is Messy
 
@@ -978,6 +1000,8 @@ Improve the process based on lessons learned.
 
 This approach creates accountability and consistency while keeping the process practical.
 
+
+
 M. Your First 90 Days
 13. You Join as Release QA Tester Tomorrow
 
@@ -1050,6 +1074,8 @@ Ensuring that important risks are communicated to stakeholders.
 A junior QA Tester should initially focus on learning the product, executing test scenarios, identifying defects, documenting evidence, and developing technical skills.
 
 With experience, responsibility should gradually expand from executing tests to making informed quality decisions.
+
+
 
 N. Final QA Recommendation
 14. Final Scenario
