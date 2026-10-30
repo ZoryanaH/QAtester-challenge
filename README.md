@@ -136,151 +136,6 @@ For the AI testing job configuration workflow, I would focus on the complete use
 
 10 Highest-Value Test Scenarios
 
-Test 1 – Successful job configuration and execution
-What to test:
-Complete the workflow using valid application URL, environment, credentials, testing scope, and options.
-
-Why it matters:
-This is the main business workflow.
-
-Potential failure:
-The job cannot start or starts with incorrect configuration.
-
-Expected evidence:
-Successful job creation, correct configuration summary, execution status, and completion.
-
-Test 2 – Invalid application URL
-What to test:
-Enter an invalid URL, unsupported protocol, incomplete URL, or inaccessible application address.
-
-Why it matters:
-Incorrect URLs should be rejected or handled appropriately.
-
-Potential failure:
-The system accepts invalid input or fails without a useful message.
-
-Expected evidence:
-Validation message and absence of an incorrectly created job.
-
-Test 3 – Missing required fields
-What to test:
-Attempt to start a job without selecting an environment or providing required credentials.
-
-Why it matters:
-Required configuration must be validated.
-
-Potential failure:
-The system starts an incomplete job.
-
-Expected evidence:
-Clear validation messages and prevention of invalid submission.
-
-Test 4 – Authentication and invalid credentials
-What to test:
-Use valid, invalid, expired, and incomplete credentials.
-
-Why it matters:
-Authentication failures must be handled securely.
-
-Potential failure:
-Unauthorized access or incorrect authentication status.
-
-Expected evidence:
-Correct error handling, logs, and absence of unauthorized access.
-
-Test 5 – User permissions
-What to test:
-Attempt to access or modify jobs and findings using accounts with different permission levels.
-
-Why it matters:
-Users should only access resources they are authorized to use.
-
-Potential failure:
-Unauthorized users can access restricted information or perform administrative actions.
-
-Expected evidence:
-Correct access restrictions and authorization responses.
-
-Test 6 – Repeated submission
-What to test:
-Click the Start button multiple times quickly or refresh during submission.
-
-Why it matters:
-Repeated actions should not create unintended duplicate jobs.
-
-Potential failure:
-Multiple jobs are created for one intended action.
-
-Expected evidence:
-Job records, UI behaviour, and relevant API requests.
-
-Test 7 – Interrupted execution
-What to test:
-Disconnect the network, refresh the browser, or close and reopen the application while a job is running.
-
-Why it matters:
-The system should handle interrupted user sessions correctly.
-
-Potential failure:
-The job becomes stuck, loses its state, or displays incorrect information.
-
-Expected evidence:
-Execution logs, job status, and restored application state.
-
-Test 8 – Findings generation and persistence
-What to test:
-Complete a job and verify that all generated findings are displayed and remain available after refreshing the application.
-
-Why it matters:
-Findings are one of the main outputs of TaloTrace.
-
-Potential failure:
-Findings are missing, duplicated, or not saved correctly.
-
-Expected evidence:
-Comparison between generated findings, API responses, and the UI.
-
-Test 9 – Evidence availability
-What to test:
-Open a finding and review its screenshots, video recordings, logs, and reproduction steps.
-
-Why it matters:
-Findings must provide reliable evidence to support their conclusions.
-
-Potential failure:
-Missing, incomplete, inaccessible, or incorrectly associated evidence.
-
-Expected evidence:
-Correct evidence displayed for the corresponding finding.
-
-Test 10 – Finding status and sharing
-What to test:
-Mark a finding, change its status, and share it with another authorized user.
-
-Why it matters:
-Finding management is important for collaboration and issue resolution.
-
-Potential failure:
-Incorrect status updates, unauthorized sharing, or changes not being saved.
-
-Expected evidence:
-Updated status, correct permissions, and persistence after refreshing.
-
-What I Would NOT Test Deeply
-
-With limited testing time, I would deprioritize:
-
-Minor visual alignment issues that do not affect usability.
-Cosmetic details unrelated to functionality.
-Extensive testing of rarely used browser configurations.
-Repeated variations of already verified low-risk scenarios.
-Performance benchmarking unless performance is part of the release requirements.
-
-I would prioritize business-critical functionality, security, data integrity, and evidence reliability.
-
-
-10 Highest-Value Test Scenarios
-
 ### 10 Highest-Value Test Scenarios
 
 | ID    | Test Scenario                         | What I Would Test                                                                                             | Expected Result                                                                                                          |
@@ -295,6 +150,18 @@ I would prioritize business-critical functionality, security, data integrity, an
 | TS-08 | Error handling and recovery           | Simulate or investigate processing failures, timeouts, and interrupted jobs.                                  | The system handles failures gracefully, provides meaningful feedback, and allows recovery or retry where supported.      |
 | TS-09 | Repeated job execution                | Submit the same or similar job more than once and compare the results and job records.                        | Each execution is tracked correctly, and results are not incorrectly mixed between jobs.                                 |
 | TS-10 | Permissions and data isolation        | Verify that users can access only the jobs and findings they are authorized to view.                          | Users cannot access another user's restricted jobs, findings, or evidence.                                               |
+
+What I Would NOT Test Deeply
+
+With limited testing time, I would deprioritize:
+
+Minor visual alignment issues that do not affect usability.
+Cosmetic details unrelated to functionality.
+Extensive testing of rarely used browser configurations.
+Repeated variations of already verified low-risk scenarios.
+Performance benchmarking unless performance is part of the release requirements.
+
+I would prioritize business-critical functionality, security, data integrity, and evidence reliability.
 
 
 
