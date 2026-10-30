@@ -293,7 +293,21 @@ I would prioritize business-critical functionality, security, data integrity, an
 | TS-06 | Findings completeness and consistency | Compare the findings shown in the interface with the results returned by the backend or stored in the system. | All expected findings are present, correctly associated with the job, and displayed without duplication or missing data. |
 | TS-07 | Evidence availability                 | Open generated findings and verify that their supporting evidence is available.                               | Evidence is accessible, correctly linked to the relevant finding, and displayed in the expected format.                  |
 | TS-08 | Error handling and recovery           | Simulate or investigate processing failures, timeouts, and interrupted jobs.                                  | The system handles failures gracefully, provides meaningful feedback, and allows recovery or retry where supported.      |
-| TS-09 | Repeated job execution                | Submit the same or similar job more than once and compare the res                                             |                                                                                                                          |
+| TS-09 | Repeated job execution                | Submit the same or similar job more than once and compare the results and job records.                        | Each execution is tracked correctly, and results are not incorrectly mixed between jobs.                                 |
+| TS-10 | Permissions and data isolation        | Verify that users can access only the jobs and findings they are authorized to view.                          | Users cannot access another user's restricted jobs, findings, or evidence.                                               |
+
+### What I Would NOT Test Deeply
+
+I would avoid spending too much time on areas that have limited impact on the core functionality or release risk:
+
+* Minor visual details, such as small spacing or cosmetic differences, unless they affect usability.
+* Rare combinations of unsupported input that are outside the documented requirements.
+* Exhaustive performance testing at this stage, unless performance is a specific release requirement.
+* Every possible browser and device combination when the main supported environments have already been identified.
+* Internal implementation details that do not affect observable system behaviour.
+
+My priority would be to validate the complete critical workflow: job submission, processing, findings generation, evidence availability, and correct result display. I would also focus on data integrity, error handling, and access control because failures in these areas could significantly affect user trust and product reliability.
+
 
 
 D. Bug Investigation & Defect Reporting
