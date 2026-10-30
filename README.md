@@ -1,6 +1,6 @@
-A. QA Experience & Personal Ownership
-1. Your QA Experience
-1.1. Tell us about the most important testing or quality achievement you personally drove.
+# A. QA Experience & Personal Ownership
+## 1. Your QA Experience
+### 1.1. Tell us about the most important testing or quality achievement you personally drove.
 One of my most relevant QA experiences was working on the Telus International project, where I performed testing of the Instagram application, focusing on brand tags and their correct representation within the system.
 My responsibilities included verifying whether the correct brand tags were assigned to Instagram content and checking whether those tags were accurately displayed and processed in the internal system.
 I performed manual testing by reviewing different Instagram posts, checking brand-related information, comparing the expected tags with the actual system output, and identifying inconsistencies.
@@ -16,7 +16,7 @@ Documenting issues and reporting unexpected results.
 This experience helped me develop strong attention to detail, particularly when working with data accuracy and information consistency across different platforms.
 I learned that even relatively small inconsistencies in displayed information can affect data quality and the reliability of the overall system.
 
-1.2 Describe an important defect you found
+### 1.2 Describe an important defect you found
 
 During my QA work at Telus International, I tested the Instagram application, focusing on the accuracy of brand tags assigned to content and how this information was displayed in the internal system.
 
@@ -32,7 +32,7 @@ I documented the discrepancies with clear examples and reproduction details so t
 
 This experience taught me the importance of checking not only whether information is displayed, but also whether it is accurate, complete, and correctly associated with the source content.
 
-1.3 Describe a defect that escaped testing or was discovered after release. What did you learn from it?
+### 1.3 Describe a defect that escaped testing or was discovered after release. What did you learn from it?
 
 I have not personally documented a major production defect that escaped my testing, but my experience testing Instagram brand tags at Telus International helped me understand how easily data-quality issues can affect the final result.
 
@@ -40,7 +40,7 @@ For example, missing brand tags, incorrect tag assignments, or tags associated w
 
 This experience reinforced the importance of validating both the presence and correctness of data. I learned to pay attention to edge cases, compare actual results against expected results, and avoid treating a successful display as proof that the functionality is working correctly.
 
-1.4 Describe a situation where you disagreed with someone about whether something was ready for release. How did you handle it?
+### 1.4 Describe a situation where you disagreed with someone about whether something was ready for release. How did you handle it?
 
 I have not directly owned formal release approval or participated in a situation where I had final responsibility for a go/no-go decision. However, my QA experience at Telus International taught me how important it is to communicate discrepancies clearly and support findings with evidence.
 
@@ -50,8 +50,8 @@ If a similar issue arose during release validation, I would explain the potentia
 
 
 
-B. How You Approach an Unfamiliar Product
-2. You Join TaloTrace
+# B. How You Approach an Unfamiliar Product
+## 2. You Join TaloTrace
 
 When joining TaloTrace and receiving an unfamiliar feature, I would follow a structured approach:
 Requirement → Risk Analysis → Test Design → Execution → Evidence → Reporting.
@@ -129,8 +129,8 @@ I would not measure testing quality only by the number of executed test cases. R
 
 
 
-C. Test Design & Risk-Based Thinking
-3. Build a Test Strategy for a Feature
+# C. Test Design & Risk-Based Thinking
+## 3. Build a Test Strategy for a Feature
 
 For the AI testing job configuration workflow, I would focus on the complete user journey, from entering the application URL to reviewing and sharing generated findings.
 
@@ -166,8 +166,8 @@ I would prioritize business-critical functionality, security, data integrity, an
 
 
 
-D. Bug Investigation & Defect Reporting
-4. From Unexpected Behaviour to High-Quality Defect
+# D. Bug Investigation & Defect Reporting
+## 4. From Unexpected Behaviour to High-Quality Defect
 
 Scenario: A testing job completes successfully, but some findings are missing from the findings list.
 I would investigate this systematically rather than immediately assuming that the UI is responsible.
@@ -252,8 +252,8 @@ I would investigate the issue by checking:
 
 
 
-E. Exploratory Testing
-5. Explore Beyond the Test Case
+# E. Exploratory Testing
+## 5. Explore Beyond the Test Case
 
 If all formal test cases pass and I have 45 minutes before release, I would use exploratory testing to investigate unexpected behaviour and gaps in existing coverage.
 I would prioritize critical user journeys and areas with complex state changes.
@@ -286,8 +286,8 @@ I would document any unexpected behaviour with clear reproduction steps and supp
 
 
 
-F. Regression & Release Validation
-6. Release Candidate
+# F. Regression & Release Validation
+## 6. Release Candidate
 
 I would approach release validation using risk-based prioritization.
 The release contains several important changes, including backend modifications, AI testing workflow changes, and evidence generation improvements.
@@ -381,8 +381,8 @@ My objective would be to provide a clear release assessment rather than simply r
 
 
 
-G. Difficult Bug Triage
-7. Which Bug Matters Most?
+# G. Difficult Bug Triage
+## 7. Which Bug Matters Most?
 
 My initial ranking would be:
 
@@ -480,8 +480,8 @@ Next action: Document the issue and schedule it for a future UI improvement.
 
 
 
-H. TaloTrace-Specific QA Judgement
-8. When the AI Finds the Wrong Thing
+# H. TaloTrace-Specific QA Judgement
+## 8. When the AI Finds the Wrong Thing
 
 If TaloTrace reports a critical payment calculation defect but I cannot reproduce it manually, I would not immediately classify it as a false positive.
 AI-generated findings should be treated as evidence requiring validation.
@@ -538,8 +538,9 @@ The release decision should depend on the potential financial impact, evidence q
 
 
 
-I. Working with the SDET
-9. Automation vs Manual Testing
+# I. Working with the SDET
+## 9. Automation vs Manual Testing
+
 Scenario 1: Automation takes three days, manual testing takes 30 minutes.
 
 Since the release is tomorrow, I would initially recommend manual execution if the workflow is stable and can be tested reliably within 30 minutes.
@@ -592,8 +593,8 @@ The objective is to preserve coverage of business-critical functionality, even i
 
 
 
-J. Working with Engineering & Product
-10. The Engineer Disagrees With Your Bug
+# J. Working with Engineering & Product
+## 10. The Engineer Disagrees With Your Bug
 
 If an engineer says that the behaviour is expected and the Product Manager believes customers will not care, I would avoid turning the discussion into a disagreement between QA and Engineering.
 
@@ -641,8 +642,8 @@ I believe QA, Engineering, and Product should work together toward a shared unde
 
 
 
-K. QA Data & Quality Signals
-11. What Would You Track?
+# K. QA Data & Quality Signals
+## 11. What Would You Track?
 
 I would select the following eight metrics.
 
@@ -751,8 +752,8 @@ Some issues may be underreported or difficult to quantify.
 
 
 
-L. Building a Better Release Process
-12. Imagine the Current Process Is Messy
+# L. Building a Better Release Process
+## 12. Imagine the Current Process Is Messy
 
 I would introduce a simple and repeatable release QA process without unnecessary bureaucracy.
 
@@ -854,8 +855,8 @@ This approach creates accountability and consistency while keeping the process p
 
 
 
-M. Your First 90 Days
-13. You Join as Release QA Tester Tomorrow
+# M. Your First 90 Days
+## 13. You Join as Release QA Tester Tomorrow
 
 My goal during the first 90 days would be to understand the product, become independent in testing, and gradually contribute to improving release quality.
 
@@ -929,8 +930,8 @@ With experience, responsibility should gradually expand from executing tests to 
 
 
 
-N. Final QA Recommendation
-14. Final Scenario
+# N. Final QA Recommendation
+## 14. Final Scenario
 Release Status: Ship with Accepted Risk
 
 Assuming that all critical user journeys have passed, no unresolved critical security or data-integrity issues remain, and the outstanding risks have been reviewed with the relevant stakeholders, my recommendation would be to ship with accepted risk.
