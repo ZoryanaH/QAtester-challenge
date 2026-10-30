@@ -279,6 +279,22 @@ Performance benchmarking unless performance is part of the release requirements.
 I would prioritize business-critical functionality, security, data integrity, and evidence reliability.
 
 
+10 Highest-Value Test Scenarios
+
+### 10 Highest-Value Test Scenarios
+
+| ID    | Test Scenario                         | What I Would Test                                                                                             | Expected Result                                                                                                          |
+| ----- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| TS-01 | Successful AI job submission          | Submit a valid job with all required information and verify that it is accepted.                              | The job is created successfully and receives a unique ID and appropriate status.                                         |
+| TS-02 | Missing or invalid input              | Submit a job with missing required fields, invalid values, or unsupported input.                              | The system validates the input and displays clear error messages without creating an invalid job.                        |
+| TS-03 | Job status tracking                   | Monitor the job through its different processing stages.                                                      | The job status is updated correctly and reflects the actual processing state.                                            |
+| TS-04 | Successful AI processing              | Submit a valid job and verify that the AI processing completes successfully.                                  | The job reaches a completed status and produces the expected results.                                                    |
+| TS-05 | Findings generation                   | Verify that the system generates findings based on the submitted input.                                       | Relevant findings are generated and displayed correctly.                                                                 |
+| TS-06 | Findings completeness and consistency | Compare the findings shown in the interface with the results returned by the backend or stored in the system. | All expected findings are present, correctly associated with the job, and displayed without duplication or missing data. |
+| TS-07 | Evidence availability                 | Open generated findings and verify that their supporting evidence is available.                               | Evidence is accessible, correctly linked to the relevant finding, and displayed in the expected format.                  |
+| TS-08 | Error handling and recovery           | Simulate or investigate processing failures, timeouts, and interrupted jobs.                                  | The system handles failures gracefully, provides meaningful feedback, and allows recovery or retry where supported.      |
+| TS-09 | Repeated job execution                | Submit the same or similar job more than once and compare the res                                             |                                                                                                                          |
+
 
 D. Bug Investigation & Defect Reporting
 4. From Unexpected Behaviour to High-Quality Defect
