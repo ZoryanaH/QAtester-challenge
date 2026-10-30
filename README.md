@@ -1,50 +1,52 @@
 A. QA Experience & Personal Ownership
 1. Your QA Experience
-1.1. One of my most valuable QA experiences was working as a QA Tester at Telus International, where I performed manual functional, regression, and usability testing for client applications and digital platforms.
-My responsibilities included analyzing application behaviour, creating test cases and checklists, identifying unexpected results, documenting defects, and verifying fixes.
-I focused on making test scenarios clear, reproducible, and aligned with the expected application behaviour. I also paid attention to both positive and negative scenarios to ensure that features worked correctly under different conditions.
-This experience helped me develop a structured testing approach and understand the importance of detailed documentation and effective communication between QA and development teams.
-I consider my ability to identify inconsistencies, investigate unexpected behaviour, and provide clear reproduction steps one of my most important QA contributions.
+1.1. Tell us about the most important testing or quality achievement you personally drove.
+One of my most relevant QA experiences was working on the Telus International project, where I performed testing of the Instagram application, focusing on brand tags and their correct representation within the system.
+My responsibilities included verifying whether the correct brand tags were assigned to Instagram content and checking whether those tags were accurately displayed and processed in the internal system.
+I performed manual testing by reviewing different Instagram posts, checking brand-related information, comparing the expected tags with the actual system output, and identifying inconsistencies.
 
-1.2. During my QA activities, I tested application functionality by comparing actual behaviour against expected results and checking different user scenarios.
-When unexpected behaviour occurred, I investigated the steps leading to the issue, repeated the scenario, and checked whether the result was consistent.
-My approach was to document:
-Preconditions and test environment.
-Exact reproduction steps.
-Expected versus actual results.
-Screenshots or other available evidence.
-Relevant technical information.
+My testing activities included:
+Verifying the correctness of brand tags associated with Instagram content.
+Checking whether tags were displayed correctly in the internal system.
+Identifying missing, incorrect, or mismatched brand information.
+Comparing actual results against expected results.
+Checking different content scenarios to ensure consistent behaviour.
+Documenting issues and reporting unexpected results.
 
-I understand that a good defect report should allow another team member to reproduce the issue without needing additional explanations.
+This experience helped me develop strong attention to detail, particularly when working with data accuracy and information consistency across different platforms.
+I learned that even relatively small inconsistencies in displayed information can affect data quality and the reliability of the overall system.
 
-My CV does not document a specific high-impact production defect, so I would not claim a particular incident or business impact without supporting details. However, defect identification, reporting, tracking, and verification were part of my QA responsibilities.
+1.2 Describe an important defect you found
 
-1.3. I do not have a documented example of a major escaped production defect that I can accurately describe.
-However, I understand that defects can escape when testing focuses too heavily on predefined happy paths and does not sufficiently cover negative scenarios, unusual inputs, different application states, or interactions between features.
-To reduce this risk, I would:
+During my QA work at Telus International, I tested the Instagram application, focusing on the accuracy of brand tags assigned to content and how this information was displayed in the internal system.
 
-Expand test coverage based on product risks.
-Include boundary and negative test cases.
-Perform exploratory testing in addition to planned testing.
-Verify important user journeys end to end.
-Review areas affected by recent code changes.
-Improve regression coverage based on previously discovered defects.
+I identified several types of data-related issues:
 
-I would also treat escaped defects as opportunities to improve the testing process rather than simply assigning blame.
+Brand tags were missing when they should have been present.
+Incorrect tags were assigned to Instagram content.
+A tag was displayed, but the brand associated with it was incorrect.
 
-1.4. I have not personally owned a formal release go/no-go decision, so I would not present myself as having that responsibility in my previous position.
-However, my approach would be evidence-based.
-If I discovered a defect affecting a critical user journey, data integrity, authentication, or an important business function, I would document its impact and communicate the risk clearly.
-I would explain:
+To investigate these issues, I compared the information associated with the Instagram content against what was displayed in the internal system. I checked whether the correct brand was identified, whether the tag was present, and whether the displayed information matched the expected result.
 
-What is failing.
-How consistently it can be reproduced.
-Which users or functionalities are affected.
-Whether a workaround exists.
-What testing remains incomplete.
+I documented the discrepancies with clear examples and reproduction details so they could be reviewed and addressed by the relevant team.
 
-I believe QA should provide an objective assessment of product quality rather than approve a release simply because of a deadline.
-I would communicate the risks to the QA Lead and relevant stakeholders, allowing the final release decision to be based on evidence and business impact.
+This experience taught me the importance of checking not only whether information is displayed, but also whether it is accurate, complete, and correctly associated with the source content.
+
+1.3 Describe a defect that escaped testing or was discovered after release. What did you learn from it?
+
+I have not personally documented a major production defect that escaped my testing, but my experience testing Instagram brand tags at Telus International helped me understand how easily data-quality issues can affect the final result.
+
+For example, missing brand tags, incorrect tag assignments, or tags associated with the wrong brand could potentially go unnoticed if testing focused only on whether the content was displayed rather than checking the accuracy of the associated information.
+
+This experience reinforced the importance of validating both the presence and correctness of data. I learned to pay attention to edge cases, compare actual results against expected results, and avoid treating a successful display as proof that the functionality is working correctly.
+
+1.4 Describe a situation where you disagreed with someone about whether something was ready for release. How did you handle it?
+
+I have not directly owned formal release approval or participated in a situation where I had final responsibility for a go/no-go decision. However, my QA experience at Telus International taught me how important it is to communicate discrepancies clearly and support findings with evidence.
+
+When testing Instagram brand tags, I focused on identifying cases where tags were missing, incorrectly assigned, or associated with the wrong brand. Rather than relying on assumptions, I compared the expected information with the actual system output and documented the discrepancies.
+
+If a similar issue arose during release validation, I would explain the potential impact, provide reproducible examples, and distinguish between cosmetic issues and problems affecting data accuracy or core functionality. If the issue could compromise the reliability of the product or its data, I would recommend resolving it before release or obtaining an explicit risk assessment and approval from the responsible stakeholders.
 
 
 
